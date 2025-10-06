@@ -10,6 +10,7 @@ public class Cannon : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("Fire", 0f, fireInterval);// tekrarlanan fonksiyon
+        
     }
 
     void Fire()

@@ -12,7 +12,7 @@ public class PlayerCamera : MonoBehaviour
     public float verticalLimit;//******************************************
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
         defaultCameraLocalPos = cameraTransform.localPosition;
     }
 

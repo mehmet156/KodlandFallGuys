@@ -12,11 +12,14 @@ public class PlayerMove : MonoBehaviour
     bool isOnIce = false;//************************************** oyuncu buzun üstünde mi deðilmi 
     float colliderHeight;
     float tempSpeed;
+    public LevelProgress levelProgress;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         colliderHeight = gameObject.GetComponent<CapsuleCollider>().height;
         tempSpeed=speed;
+        jumpSpeed = PlayerPrefs.GetFloat("JumpSpeed");
+        //jumpSpeed = levelProgress.jumpSpeed;
     }
     void Update()
     {
